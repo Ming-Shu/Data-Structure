@@ -1,2 +1,1 @@
-# Data-Structure
-Data Structure in C
+This code describes how to implement data structures in C
