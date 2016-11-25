@@ -13,7 +13,6 @@ void displayAll(struct node *head);
 struct node *deleteNode(struct node *head,struct node *current);
 int listLength(struct node *head);
 
-
 struct node *createNode(void)
 {
 	struct node *pNew;
@@ -22,13 +21,11 @@ struct node *createNode(void)
   	if(pNew==NULL){
   		printf("malloc failed!\n");
   		exit(1);
-	  }
-	  
+	  }	  
 	pNew->data=-1;  
-    pNew->next=NULL;   
-    
-	return pNew;
-    
+    	pNew->next=NULL;   
+   
+	return pNew;   
 }
 
 struct node *insertNode(struct node *head,struct node *current,int data)
@@ -36,7 +33,7 @@ struct node *insertNode(struct node *head,struct node *current,int data)
 	struct node *newNode;
 	newNode = createNode();
 	newNode->data=data;  
-    newNode->next=NULL;  
+   	 newNode->next=NULL;  
     
     if(current==NULL){
     	newNode->next = head;/*if insert node in front of head*/
