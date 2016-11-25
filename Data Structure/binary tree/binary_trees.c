@@ -25,14 +25,12 @@ struct node *createNode(void)
   	if(pNew==NULL){
   		printf("malloc failed!\n");
   		exit(1);
-	  }
-	  
+	}	  
 	pNew->data=-1;
 	pNew->left=NULL;   
-    pNew->right=NULL;   
+    	pNew->right=NULL;   
     
-	return pNew;
-    
+	return pNew;   
 }
 
 struct node *insertNode(struct node *tree,int inData)
@@ -77,8 +75,7 @@ struct node *findParent(struct node *tree,int value)
 			tree = tree->left;
 		else
 			tree = tree->right;	
-	}//while
-	
+	}//while	
 	return NULL;
 }
 
@@ -119,8 +116,7 @@ void displayAll(struct node *tree)
 	if (!tree){
 		printf("\nNo any Data exist in tree!\n\n");
 		return;	
-	}
-	
+	}	
 	printf("------------------------\n");
 	printf("Pre-Order\n");
 	print_PreOrder(head);
@@ -152,8 +148,7 @@ struct node *deleteNode(struct node *tree,int value)
 	if(parent==NULL){
 		printf("\nValue does not exist in tree!\n");
     	return NULL;
-	}
-	
+	}	
 	if(parent->left->data==value){
 		ptrDel = parent->left;
 		pos=0;
@@ -258,6 +253,5 @@ int main(void)
 				printf("The select is error!\n");				
 		}//switch	
 	}//while
-
 	return 0;
 }
