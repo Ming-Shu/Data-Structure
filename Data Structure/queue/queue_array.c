@@ -36,7 +36,7 @@ void Show(int queue[],int front ,int rear)
 		return;
 	}
 	while(front!=rear)
-					printf("(%d)\n", queue[front++]);			
+		printf("(%d)\n", queue[front++]);			
 	printf("\n------------------------\n");				
 }
 
