@@ -12,25 +12,25 @@ Tree Traversal
 
 Pre-order Traversal Algorithm
 
-Step 1 ? Visit root node.
-Step 2 ? Recursively traverse left subtree.
-Step 3 ? Recursively traverse right subtree.
+Step 1 : Visit root node.
+Step 2 : Recursively traverse left subtree.
+Step 3 : Recursively traverse right subtree.
 
 *********************************************************
 
 In-order Traversal
 
-Step 1 ? Recursively traverse left subtree.
-Step 2 ? Visit root node.
-Step 3 ? Recursively traverse right subtree.
+Step 1 : Recursively traverse left subtree.
+Step 2 : Visit root node.
+Step 3 : Recursively traverse right subtree.
 
 *********************************************************
 
 Post-order Traversal
 
-Step 1 ? Recursively traverse left subtree.
-Step 2 ? Recursively traverse right subtree.
-Step 3 ? Visit root node.
+Step 1 : Recursively traverse left subtree.
+Step 2 : Recursively traverse right subtree.
+Step 3 : Visit root node.
 
 *********************************************************
 ==================
