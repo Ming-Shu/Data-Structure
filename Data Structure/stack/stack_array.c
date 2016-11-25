@@ -37,7 +37,7 @@ void Show(int stack[],int top)
 	}
  
 	while(!top==0)
-					printf("(%d)\n", stack[--top]);				
+		printf("(%d)\n", stack[--top]);				
 	printf("------------------------\n");				
 }
 
@@ -73,6 +73,5 @@ int main(void)
 				printf("The select is error!\n");				
 		}//switch	
 	}//while
-
 	return 0;
 }
