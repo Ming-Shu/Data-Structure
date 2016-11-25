@@ -11,3 +11,5 @@ A simple library of data structures for C. The current release contains implemen
 ● Queue (queue/queue_list.c)
 
 ● Linked List (link list/linked_list.c)
+
+● Binary tree (binary tree/binary_trees.c)
