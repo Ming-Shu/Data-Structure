@@ -17,9 +17,9 @@ struct node * push(struct node *top,int data)
 	struct node *pNew;
 	pNew = (struct node *)malloc(sizeof(struct node));
 	
-    if (pNew == NULL){
-        printf("\nThe Memory allocation error!!!\n\n");
-        exit(1);
+	if (pNew == NULL){
+        	printf("\nThe Memory allocation error!!!\n\n");
+        	exit(1);
 	}else{
 		pNew->data =data;
 		pNew->next = top;
@@ -35,15 +35,14 @@ struct node * push(struct node *top,int data)
 struct node * pop(struct node *top)
 {
 	struct node *pDel;
-    if (top == NULL)
-        printf("-------\nThe stack is empty!!\n-------\n");
-    else{
-    	printf("Delete a (%d)\n", top->data);
-    	pDel = top;
-    	top = top->next;
-    	free(pDel);
-	}
-        
+	if (top == NULL)
+		printf("-------\nThe stack is empty!!\n-------\n");
+	else{
+    		printf("Delete a (%d)\n", top->data);
+    		pDel = top;
+    		top = top->next;
+    		free(pDel);
+	}//else      
     return top;
 }
 
@@ -58,8 +57,7 @@ void Show(struct node *top)
 	while(top!=NULL){
 		printf("(%d)\n", top->data);
 		top =top->next;
-	}
-								
+	}								
 	printf("------------------------\n");				
 }
 
@@ -94,6 +92,5 @@ int main(void)
 				printf("The select is error!\n");				
 		}//switch	
 	}//while
-
 	return 0;
 }
