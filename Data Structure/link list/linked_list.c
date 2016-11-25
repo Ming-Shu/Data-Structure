@@ -24,7 +24,6 @@ struct node *createNode(void)
 	  }	  
 	pNew->data=-1;  
     	pNew->next=NULL;   
-   
 	return pNew;   
 }
 
@@ -33,11 +32,11 @@ struct node *insertNode(struct node *head,struct node *current,int data)
 	struct node *newNode;
 	newNode = createNode();
 	newNode->data=data;  
-   	 newNode->next=NULL;  
+   	newNode->next=NULL;  
     
-    if(current==NULL){
-    	newNode->next = head;/*if insert node in front of head*/
-    	head = newNode;
+	if(current==NULL){
+    		newNode->next = head;/*if insert node in front of head*/
+    		head = newNode;
 	}else{
 		if(current->next=NULL)
 			current->next = newNode;
@@ -47,7 +46,7 @@ struct node *insertNode(struct node *head,struct node *current,int data)
 			current->next = newNode;
 		}		
 	}
-   return head;
+	return head;
 }
 
 struct node *seachNode(struct node *head,int data)
@@ -78,8 +77,8 @@ struct node *deleteNode(struct node *head,struct node *current)
 		return head;
 	}
 		
-    if(current==head){/*if delete node is head*/
-    	head = head->next;
+	if(current==head){/*if delete node is head*/
+    		head = head->next;
 	}else{
 		while(previous->next!=current)
 			previous = previous->next;
@@ -143,6 +142,5 @@ int main(void)
 				printf("The select is error!\n");				
 		}//switch	
 	}//while
-
 	return 0;
 }
